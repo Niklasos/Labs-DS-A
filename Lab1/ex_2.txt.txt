@@ -1,0 +1,9 @@
+Exercise 2.
+
+The test was done by adding a set of numbers to the doubly-linked list.
+Then I created a function that is called "RunTest" and it checks if any of the list functions don't get an exected
+value. If it doesn't get an expected value it print out "Test exercise2 failed!" and if expected it prints out
+"Test exercise2 success!!".
+
+Niklas Olsson
+950405

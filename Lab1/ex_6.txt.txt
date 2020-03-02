@@ -1,0 +1,9 @@
+Exercise 6.
+Testing of Lilian Sonestedt and Kevin Kaunisvaaras implementation.
+
+I ran a test on the queue. I enqueued a sequence of numbers: 5, 12, 8, 2, 7, 10, 90. Then I tried to dequeue these
+numbers. The implementation ran without any problems and with an expected result.
+
+The code is using names that refer to what the variables represent. Therefore, the implementation is easy to 
+understand. The code uses “Magic numbers” when deciding the max size of the stack. This could be avoided by, 
+for example, defining a constant. Besides this I think the code is written in a good way.

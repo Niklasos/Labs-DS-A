@@ -1,0 +1,13 @@
+Exercise 3.
+
+The file Stack.h implements the data structure for the stack and the file Stack.cimplements the algorithms. 
+
+I tested the implementation in Exercise5.c. This was done by adding a set of numbers to the stack. To test if the 
+implementation is working I save the value from the "Pop" function in a variable and compares it to the expected result.
+If all the values are correct we I print out "Stack test ran successfully!" otherwise we print "Stack test failed!".
+
+To test the implementation with a different set of numbers you can change the values in Exercise5.c function called
+"TestStack". 
+
+Niklas Olsson 
+950405

@@ -1,0 +1,12 @@
+Exercise 5.
+
+The test of the stack was done by adding a set of numbers to the stack. To test if the 
+implementation is working I save the value from the "Pop" function in a variable and compares it to the expected result.
+If all the values are correct we I print out "Stack test ran successfully!" otherwise we print "Stack test failed!".
+
+The test of the queue was done by adding a set of numbers to the queue. To test if the 
+implementation is working I save the value from the "Dequeue" function in a variable and compares it to the expected result.
+If all the values are correct we I print out "Queue test ran successfully!" otherwise we print "Queue test failed!".
+
+Niklas Olsson
+950405

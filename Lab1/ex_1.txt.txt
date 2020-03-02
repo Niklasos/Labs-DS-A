@@ -1,0 +1,16 @@
+Exercise 1.
+
+The file List.h implements the data structure for the doubly-linked list and the file List.c implements the algorithms. 
+
+I tested the implementation in Exercise2.c. This was done by adding a set of numbers to the doubly-linked list.
+Then I created a function that is called "RunTest" and it checks if any of the list functions don't get an exected
+value. If it doesn't get an expected value it print out "Test exercise2 failed!" and if expected it prints out
+"Test exercise2 success!!".
+
+To test the implementation with a different set of numbers you can change the values in Exercise2.c functions called
+"AddToList1" and "AddToList2". To get the predecessor and successor from nodes you can change the input parameters
+in the function "RunTest".
+
+
+Niklas Olsson 
+950405

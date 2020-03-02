@@ -1,0 +1,17 @@
+Exercise 1.
+The sorting algorithm better than quadratic complexity is implemented in the file Exercise2.c. 
+The algorithm implemented is merge sort with an avarage complexity of Θ(n log(n)).
+
+I tested this implementation in the file Exercise4.c by creating a two dimensional array that contained the lists from Lab 1
+and my personal number. I also created an array with these numbers sorted order so I could compare these two arrays. 
+I ran MergeSort on the unsorted list. After that compared these two arrays using two for loops. If any of these 
+arrays dont match the sorted array I use a variable as a flag that changes to 0 and the test function print out a 
+message that the Merge sort failed.
+
+To test this implementation with some other data you can either manipulate the numbers in the file Exercise4.c or create an
+array and use the function MergeSort(int * arr, int startIndex, int endIndex) and enter the array that you want to sort together 
+with the start- and end index.
+
+
+Niklas Olsson
+19950405
