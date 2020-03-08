@@ -7,7 +7,7 @@
 
 int* load_file(const char* fName)
 {
-	int input[MAX_NUM_ELEMENTS];
+	int *input = malloc(sizeof(int)*MAX_NUM_ELEMENTS);
 	int num_elements = 0;
 
 	FILE* file = fopen(fName, "r");
@@ -17,6 +17,10 @@ int* load_file(const char* fName)
 	}
 	char line[256];
 	while (fgets(line, sizeof(line), file)) {
+		if (input == NULL)
+		{
+			return 0;
+		}
 		input[num_elements++] = atoi(line);
 		//printf("%d\n", atoi(line));
 	}

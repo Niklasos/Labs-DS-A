@@ -28,7 +28,7 @@ Node* TreeInsert(BinarySearchTree *tree, Node *node)
 {
 	if (tree == NULL || node == NULL)
 	{
-		printf("The inserted node or tree is NULL reference!\n");
+		printf("The inserted node or the tree is NULL reference!\n");
 		return node;
 	}
 	if (tree->Root == NULL)
