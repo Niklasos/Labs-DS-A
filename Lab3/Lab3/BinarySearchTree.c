@@ -33,6 +33,7 @@ Node* TreeInsert(BinarySearchTree *tree, Node *node)
 	}
 	if (tree->Root == NULL)
 	{
+		node->Parent = NULL;
 		tree->Root = node;
 		return node;
 	}
@@ -104,6 +105,10 @@ Node* TreeMaximum(Node* root)
 
 Node* TreeSuccessor(Node* node)
 {
+	if (node == NULL)
+	{
+		return NULL;
+	}
 	if (node->RightChild != NULL)
 	{
 		return TreeMinimum(node->RightChild);
@@ -114,12 +119,20 @@ Node* TreeSuccessor(Node* node)
 	{
 		node = temp;
 		temp = temp->Parent;
+		if (temp == NULL)
+		{
+			return NULL;
+		}
 	}
 	return temp;
 }
 
 Node* TreePredecessor(Node* node)
 {
+	if (node == NULL)
+	{
+		return NULL;
+	}
 	if (node->LeftChild != NULL)
 	{
 		return TreeMaximum(node->LeftChild);
@@ -130,6 +143,10 @@ Node* TreePredecessor(Node* node)
 	{
 		node = temp;
 		temp = temp->Parent;
+		if (temp == NULL)
+		{
+			return NULL;
+		}
 	}
 	return temp;
 }
