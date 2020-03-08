@@ -1,4 +1,4 @@
-Exercise 1.
+Exercise 2.
 The sorting algorithm better than quadratic complexity is implemented in the file Exercise2.c. 
 The algorithm implemented is merge sort with an avarage complexity of Θ(n log(n)).
 

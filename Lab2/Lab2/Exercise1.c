@@ -19,6 +19,4 @@ void InsertionSort(int* arr, int elements)
 		}
 		arr[j + 1] = key;
 	}
-
-	return 1;
 }

@@ -7,7 +7,14 @@
 
 int* load_file(const char* fName)
 {
-	int input[MAX_NUM_ELEMENTS];
+	int* input = malloc(sizeof(int) * MAX_NUM_ELEMENTS);
+	if (input == NULL)
+	{
+		printf("Couldn't allocate memory. Exiting...\n");
+
+		exit(1);
+	}
+	//int input[MAX_NUM_ELEMENTS];
 	int num_elements = 0;
 
 	FILE* file = fopen(fName, "r");
@@ -17,6 +24,10 @@ int* load_file(const char* fName)
 	}
 	char line[256];
 	while (fgets(line, sizeof(line), file)) {
+		if (input == NULL)
+		{
+			exit(1);
+		}
 		input[num_elements++] = atoi(line);
 		//printf("%d\n", atoi(line));
 	}
@@ -29,6 +40,7 @@ int* load_file(const char* fName)
 	}
 	if (data == NULL)
 	{
+		printf("Couldn't allocate memory. Exiting...\n");
 		exit(1);
 	}
 	data[0] = num_elements;

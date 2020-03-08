@@ -1,8 +1,8 @@
 ﻿  BinarySearchTree.c
   Exercise2.c
   Load_file.c
-C:\Users\_nikl\source\repos\Lab3\Lab3\Load_file.c(13,1): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\_nikl\Documents\GitHub\PodcastApp\Labs-DS-A\Lab3\Lab3\Load_file.c(13,1): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   Main.c
   Generating Code...
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(208): message : see declaration of 'fopen'
-  Lab3.vcxproj -> C:\Users\_nikl\source\repos\Lab3\Debug\Lab3.exe
+  Lab3.vcxproj -> C:\Users\_nikl\Documents\GitHub\PodcastApp\Labs-DS-A\Lab3\Debug\Lab3.exe

@@ -15,7 +15,7 @@ void Merge(int* arr, int p, int q, int r)
 
 	if (arr1 == NULL || arr2 == NULL)
 	{
-		return 0;
+		return;
 	}
 
 	for (int i = 0; i < lengthArr1; i++)
