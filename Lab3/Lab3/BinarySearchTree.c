@@ -29,7 +29,7 @@ Node* TreeInsert(BinarySearchTree *tree, Node *node)
 	if (tree == NULL || node == NULL)
 	{
 		printf("The inserted node or the tree is NULL reference!\n");
-		return node;
+		return NULL;
 	}
 	if (tree->Root == NULL)
 	{
@@ -87,6 +87,10 @@ Node* TreeSearch(Node *root, int number)
 
 Node* TreeMinimum(Node* root)
 {
+	if (root == NULL)
+	{
+		return root;
+	}
 	while (root->LeftChild != NULL)
 	{
 		root = root->LeftChild;
@@ -96,6 +100,10 @@ Node* TreeMinimum(Node* root)
 
 Node* TreeMaximum(Node* root)
 {
+	if (root == NULL)
+	{
+		return root;
+	}
 	while (root->RightChild != NULL)
 	{
 		root = root->RightChild;
@@ -153,7 +161,7 @@ Node* TreePredecessor(Node* node)
 
 Node* TreeDelete(Node* root, Node* del)
 {
-	if (del == NULL)
+	if (del == NULL || root == NULL)
 	{
 		return del;
 	}

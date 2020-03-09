@@ -16,3 +16,5 @@ int TestMinMax();
 int TestSucPre();
 //Test the depth and count function. Return 1 if correct, 0 if wrong.
 int TestDepthAndCount();
+//Test that prints out the BST in ascending order
+int TestPrintAsc();

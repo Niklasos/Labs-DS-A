@@ -1,11 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "Exercise2.h"
+#include "Tests.h"
 #include "Load_file.h"
-
-void TestAdd();
-void AddToTree(BinarySearchTree* binarySearchTree);
 
 void AddToTree(BinarySearchTree* binarySearchTree)
 {
@@ -27,6 +24,7 @@ void AddToTree(BinarySearchTree* binarySearchTree)
 
 void RunTests()
 {
+	TestPrintAsc();
 	int minMax = TestMinMax();
 	int sucPre = TestSucPre();
 	int depCou = TestDepthAndCount();
@@ -43,6 +41,23 @@ void RunTests()
 	{
 		printf("Test for depth and count ran successsfully!\n");
 	}
+}
+
+int TestPrintAsc()
+{
+	BinarySearchTree* binarySearchTree = malloc(sizeof(BinarySearchTree));
+
+	if (binarySearchTree == NULL)
+	{
+		exit(1);
+	}
+	binarySearchTree->Root = NULL;
+
+	AddToTree(binarySearchTree);
+
+	TreePrintAsc(binarySearchTree->Root);
+
+	return 1;
 }
 
 int TestMinMax()

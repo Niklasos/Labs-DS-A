@@ -125,12 +125,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="BinarySearchTree.h" />
-    <ClInclude Include="Exercise2.h" />
+    <ClInclude Include="Tests.h" />
     <ClInclude Include="Load_file.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BinarySearchTree.c" />
-    <ClCompile Include="Exercise2.c" />
+    <ClCompile Include="Tests.c" />
     <ClCompile Include="Load_file.c" />
     <ClCompile Include="Main.c" />
   </ItemGroup>

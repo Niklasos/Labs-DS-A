@@ -21,7 +21,7 @@
     <ClInclude Include="Load_file.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Exercise2.h">
+    <ClInclude Include="Tests.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -35,7 +35,7 @@
     <ClCompile Include="Load_file.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Exercise2.c">
+    <ClCompile Include="Tests.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
