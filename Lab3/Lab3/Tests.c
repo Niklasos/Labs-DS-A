@@ -6,7 +6,7 @@
 
 void AddToTree(BinarySearchTree* binarySearchTree)
 {
-	int* arr = load_file("test-10-3-problem");
+	int* arr = load_file("test-10-1-problem");
 
 	for (int i = 1; i < arr[0] + 1; i++)
 	{
@@ -20,6 +20,24 @@ void AddToTree(BinarySearchTree* binarySearchTree)
 		node->RightChild = NULL;
 		TreeInsert(binarySearchTree, node);
 	}
+}
+
+void TestLab3()
+{
+	BinarySearchTree* binarySearchTree = malloc(sizeof(BinarySearchTree));
+
+	if (binarySearchTree == NULL)
+	{
+		exit(1);
+	}
+	binarySearchTree->Root = NULL;
+
+	AddToTree(binarySearchTree);
+
+	Node* succ = TreeSuccessor(TreeSearch(binarySearchTree->Root, 79));
+	Node* pre = TreePredecessor(TreeSearch(binarySearchTree->Root, 73));
+	TreeDelete(binarySearchTree->Root, TreeSearch(binarySearchTree->Root, 72));
+	printf("Successor of 79: %d Predecessor of 73: %d", succ->number, pre->number);
 }
 
 void RunTests()

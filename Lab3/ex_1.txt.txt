@@ -1,0 +1,16 @@
+Exercise 1.
+The file BinarySearchTree.c implements the data structures and the functions.
+
+To test the implementation I created three functions: TestMinMax() that tests the functions TreeMinimum and TreeMaximum
+, TestSucPre() that tests the functions TreeSuccessor and TreePredecessor, and TestDepthAndCount() that tests the 
+functions TreeDepth and TreeCount. I did this by calling these functions and saving the result in a variable.
+Then compared these variables with what the expected result is. If the tests run successfully the test functions return 1
+otherwise they return 0. Then I have a function that is called RunTest() that prints out a positive message if they run
+successfully and a negative message indicating which test failed. This way it is easier to understand what implementation 
+didnt get the right result.
+
+To execute your own test on this implementation you can use the Test.c class and change the variables to see if the test still
+run successfully.
+
+Niklas Olsson
+19950405

@@ -18,3 +18,5 @@ int TestSucPre();
 int TestDepthAndCount();
 //Test that prints out the BST in ascending order
 int TestPrintAsc();
+
+void TestLab3();
