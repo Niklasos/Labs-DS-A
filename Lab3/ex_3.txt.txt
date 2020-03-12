@@ -1,0 +1,13 @@
+Exercise 3.
+Testing of Lilian Sonestedt and Kevin Kaunisvaaras implementation.
+
+To test the implementation I created three new functions: TestMinMax() that tests the functions Min and Max
+these tests ran with an expected result. TestSucPre() that tests the functions Successor and Predecessor these functions returned expected resul.
+TestDepthAndCount() that tests the functions Depth and Count these function also ran with an expected result.
+
+The code is using names that refer to what the variables represent. Therefore, the implementation is easy to 
+understand. The implementation is also structured in a good way that makes it easy to re-use the code implemented in this exercise.
+
+Niklas Olsson
+950405
+

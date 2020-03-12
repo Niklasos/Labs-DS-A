@@ -5,6 +5,6 @@
 
 int main()
 {
-	//RunTests();
-	TestLab3();
+	RunTests();
+	//TestLab3();
 }

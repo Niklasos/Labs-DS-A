@@ -1,0 +1,11 @@
+Exercise 2.
+
+The test is implemented in the file Tests.c
+
+I use the function TestPrintAsc() add the file into the array and in this function I use TreePrintAsc() to print the 
+numbers in ascendning order.
+
+
+
+Niklas Olsson
+19950405

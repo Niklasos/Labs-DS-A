@@ -6,7 +6,7 @@
 
 void AddToTree(BinarySearchTree* binarySearchTree)
 {
-	int* arr = load_file("test-10-1-problem");
+	int* arr = load_file("test-10-3-problem");
 
 	for (int i = 1; i < arr[0] + 1; i++)
 	{
