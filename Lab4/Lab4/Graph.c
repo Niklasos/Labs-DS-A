@@ -1,21 +1,68 @@
 #include "Graph.h"
 
+void Push(Stack* stack, Vertex* vertex)
+{
+	stack->top++;
+	stack->vertices[stack->top] = malloc(sizeof(Vertex));
+	if (stack->vertices[stack->top] == NULL)
+	{
+		exit(1);
+	}
+	stack->vertices[stack->top] = vertex;
+}
+
+Vertex* Pop(Stack* stack)
+{
+	if (StackEmpty(stack) == 1)
+	{
+		printf("Stack is empty\n");
+		return 0;
+	}
+	stack->top--;
+	return stack->vertices[stack->top + 1];
+}
+
+int StackEmpty(Stack* stack)
+{
+	if (stack->top == -1)
+	{
+		return 1;
+	}
+	return 0;
+}
+
+Stack* CreateStack()
+{
+	Stack* stack = malloc(sizeof(Stack));
+	if (stack != NULL)
+	{
+		stack->vertices = malloc(sizeof(Vertex));
+		if (stack->vertices == NULL)
+		{
+			exit(1);
+		}
+		stack->top = -1;
+		return stack;
+	}
+	return NULL;
+}
+
 Graph* CreateGraph(int n)
 {
-	Graph* g = malloc(sizeof(Graph) * n);
+	Graph* g = malloc(sizeof(Graph));
 	if (g == NULL)
 	{
 		return NULL;
 	}
 
 	g->size = n;
-	g->vertexList = malloc(sizeof(Vertex));
+	g->vertexList = calloc(sizeof(Vertex), n);
 	if (g->vertexList == NULL)
 	{
 		return NULL;
 	}
 
-	for (int i = 1; i < n + 1; i++)
+	for (int i = 0; i < n + 0; i++)
 	{
 		Vertex* v = malloc(sizeof(Vertex));
 		if (v == NULL)
@@ -24,7 +71,7 @@ Graph* CreateGraph(int n)
 		}
 		v->head = NULL;
 		v->number = i;
-		g->vertexList[i-1] = v;
+		g->vertexList[i-0] = v;
 	}
 	return g;
 }
@@ -174,6 +221,35 @@ void AddDirectedEdge(Vertex* v1, Vertex* v2)
 		temp->next = edge;
 	}
 	
+}
+
+void AddDirectedWeightedEdge(Vertex* v1, Vertex* v2, int weight)
+{
+	if (v1 == NULL || v2 == NULL)
+	{
+		return;
+	}
+	Edge* temp = v1->head;
+	Edge* edge = malloc(sizeof(Edge));
+	if (edge == NULL)
+	{
+		return;
+	}
+	edge->vertex = v2;
+	edge->weight = weight;
+	edge->next = NULL;
+	if (v1->head == NULL)
+	{
+		v1->head = edge;
+	}
+	else
+	{
+		while (temp->next != NULL)
+		{
+			temp = temp->next;
+		}
+		temp->next = edge;
+	}
 }
 
 void AddUndirectedEdge(Vertex* v1, Vertex* v2)

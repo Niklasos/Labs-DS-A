@@ -4,7 +4,6 @@
 #include "Exercise2.h"
 #include "Load_file.h"
 
-void TestAdd();
 void AddToTree(BinarySearchTree* binarySearchTree);
 
 void AddToTree(BinarySearchTree* binarySearchTree)

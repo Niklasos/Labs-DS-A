@@ -124,12 +124,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Graph.c" />
-    <ClCompile Include="LinkedList.c" />
     <ClCompile Include="Main.c" />
+    <ClCompile Include="GraphAlgorithms.c" />
+    <ClCompile Include="Tests.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Graph.h" />
-    <ClInclude Include="LinkedList.h" />
+    <ClInclude Include="GraphAlgorithms.h" />
+    <ClInclude Include="Tests.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
