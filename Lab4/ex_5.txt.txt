@@ -10,7 +10,8 @@ A better solution would be to create if-statements and print something like "Suc
 value and "Fail" when it doesn't. Although that would have been better they had two pictures in the main folder of the
 project so I could see that the test ran successfully.
 
-I got 16 warnings when I redbuild the solution.
+I got 16 warnings when I redbuild the solution. And there are no NULL checks in the functions so you get an exception if you, 
+for some reason input NULL to the function.
 
 Exercise 1 test:
 To test the implementation in exercise 1 I created a graph with 10 vertices and added 10 edges to it. Then 
