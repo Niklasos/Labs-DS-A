@@ -1,8 +1,14 @@
 Exercise 4:
-The file that implement the tests is Exercise4.c.
+The algorithm implemented for this exercise is the Bellman-ford algorithm. This algorithm is implemented
+in the file GraphAlgorithms.c and GraphAlgorithms.h. 
 
-Explanation for how the tests where carried out is explained in ex_1.txt and ex_2.txt files.
+To test this implementation I created two graphs and ran Bellman-Ford on them. I created two arrays that
+contain the correct result of the shortest path (g1Result and g2Result). After that I set a flag named failed to 0.
+After this I loop through the graphs and check if the value on the vertices distance is the same as the value as
+the array. If it is, nothing happens. If it isn't, the flag will change to 1 and the test will fail.
 
+To run a different test you create a different graph in the function TestExercise4() and change the resultarray to 
+the result you expect to get when you get the shortest path and run the same for-loop as shown in the function.
 
 Niklas Olsson
 950405

@@ -1,14 +1,37 @@
 Exercise 5:
-The file that implements the testing is in the file Exercise5.c.
+Testing of Lilian Sonestedt and Kevin Kaunisvaaras implementation.
 
-I loaded arrays using the load_file function. Then I ran the InsertionSort on one of the arrays and MergeSort on the other. After this I 
-created a for-loop that print out all the numbers in sorted order. 
+The code is using names that refer to what the variables represent. Therefore, the implementation is easy to 
+understand. The implementation is also structured in a good way that makes it easy to re-use the code implemented 
+in this exercise. 
 
-I tested this implementation by using a flag in the for-loop that is changed to 0 if one of the lists doesnt match the sorted list and print
-out an error message.
+The tests that they have created themselves requires me to know what the outcome of the test case should be. 
+A better solution would be to create if-statements and print something like "Success" when the test get the expected
+value and "Fail" when it doesn't. Although that would have been better they had two pictures in the main folder of the
+project so I could see that the test ran successfully.
 
-The difference between the two algorithms is getting more significant the bigger the list is getting. The insertion sort is suffering more
-from a bigger list.
- 
+I got 16 warnings when I redbuild the solution.
+
+Exercise 1 test:
+To test the implementation in exercise 1 I created a graph with 10 vertices and added 10 edges to it. Then 
+I tested the functions GetNumVertices and GetNumEdges and compared them with the expected number in an if-statement.
+Then I tested the functions GetNeighbors, GetInNeighbors, and GetOutNeighbors to see if they returned the vertices
+they should. I compared these with an if-statement. 
+The last thing I tested in exercise 1 was if the HasEdge and AddEdge worked. First I tested if the function returned 
+0 before I added the edge, then I added the graph. I used an if-statement to make it easier to understand.
+
+Exercise 2 test:
+To test this implementation I changed the values of the start and end in the function testExercise2() to see if I still 
+got the correct answer. The test still ran successfully.
+
+Exercise 3 test:
+To test this implementation I created a new ComponentGraph. I ran SCC on it and compared the vertices SCCnumber with the 
+vertices that should have the same SCC number. The test ran successfully on my graph.    
+
+Exercise 4 test:
+I created a new SSP_Graph and ran the bellman_Ford function with a source node. After this I created an array with the 
+expected disFromSource. I looped through the SSP_Graph and compared the nodes in the SSP_Graphs disFromSource to the 
+array. The test ran succesfully!
+
 Niklas Olsson
 950405

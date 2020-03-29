@@ -28,11 +28,12 @@ void Relax(Vertex* from, Vertex* to, int weight);
 int BellmanFord(Graph* graph, Vertex* source, int numberOfVertices);
 
 //Algorithms used for exercise 3
+//First "regular" call of DFS in SCC
 void DFS(Graph* graph, int size, Stack* stack);
-
-
+//Visit a node in DFS
 void DFSVisit(Graph* graph, Vertex* vertex, Stack* stack);
 
+//Second call of DFS in SCC that is called with the transposed graph and sets the attribute SCCNumber
 void DFS2(Graph* graph, Vertex* source);
 void DFSVisit2(Graph* graph, Vertex* vertex);
 

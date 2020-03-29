@@ -504,6 +504,7 @@ void PrintExercise2Path()
 	Vertex* source = g->vertexList[0];
 	printf("\n  Exercise 2  \n");
 	printf("The fastest way from %d to %d is\n", source->number, target->number);
+	printf("%d\n", temp->number);
 	while (temp != source)
 	{
 		printf("%d\n", temp->prev->number);
@@ -762,10 +763,7 @@ void SCC(Graph* graph, int size)
 	Stack* stack = CreateStack();
 	DFS(graph, size, stack);
 
-
 	Graph* newGraph = TransposeGraph(graph, size);
-	
-
 
 	for (int i = 0; i < size; i++)
 	{

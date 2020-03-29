@@ -92,6 +92,7 @@ int HasEdge(Vertex* v1, Vertex* v2);
 //Returns an empty allocated list
 List* CreateList();
 
+//Create a new list node of an Vertex.
 Node* CreateNode(Vertex* vertex);
 
 //Insert a Node node into the list.
