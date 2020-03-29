@@ -1,0 +1,8 @@
+Exercise 4:
+The file that implement the tests is Exercise4.c.
+
+Explanation for how the tests where carried out is explained in ex_1.txt and ex_2.txt files.
+
+
+Niklas Olsson
+950405

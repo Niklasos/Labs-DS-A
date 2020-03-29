@@ -1,0 +1,23 @@
+Exercise 1.
+The file that implements the algorithm in this exercise is Graph.h and Graph.c. The tests that were carried out to
+test this implementation is in the Test.h and Test.c files.
+
+The first function that tests the implementation is a function called TestGetNumVerticesAndEdges(). This test is 
+testing the functions GetNumEdges() and GetNumVertices(). I create a graph with 9 vertices and 10 edges and after 
+this I call the functions in an if-statement and compare if I get a correct number of vertices and edges. If I
+do get a correct number of vertices and edges i print that the test succeeded otherwise I print that it failed.
+
+The second test checks if the functions GetNeighbors(), GetInNeighbors(), and GetOutNeighbors() get an expected result.
+This test is similar to the previous one. First, I save the vertices in a variable and then I compare these vertices 
+to the vertex that should be the neighbor. If this is correct I will get "Test success!" otherwise "Test failed!".
+
+The third and last test is called TestEdgeAdd() and this tests the functions AddDirectedEdge(), AddUndirectedEdge, and 
+HasEdge(). First I use the functions AddDirected/AddUndirectedEdge to add an edge to the graph. In the if-statement 
+I use the function HasEdge() to check if the functions added an edge between the vertices. 
+
+To test this implementation with some other data you can either manipulate the numbers in the file Test.c or create
+a new graph by using the function CreateGraph(int n) and add some edges and uses the functions to check if they are 
+added properly.
+
+Niklas Olsson
+19950405

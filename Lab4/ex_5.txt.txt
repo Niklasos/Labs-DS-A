@@ -1,0 +1,14 @@
+Exercise 5:
+The file that implements the testing is in the file Exercise5.c.
+
+I loaded arrays using the load_file function. Then I ran the InsertionSort on one of the arrays and MergeSort on the other. After this I 
+created a for-loop that print out all the numbers in sorted order. 
+
+I tested this implementation by using a flag in the for-loop that is changed to 0 if one of the lists doesnt match the sorted list and print
+out an error message.
+
+The difference between the two algorithms is getting more significant the bigger the list is getting. The insertion sort is suffering more
+from a bigger list.
+ 
+Niklas Olsson
+950405

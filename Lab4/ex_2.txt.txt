@@ -1,0 +1,18 @@
+Exercise 2.
+The shortest path algorithm is implemented in the file GraphAlgorithms.h and GraphAlgorithms.c. Functions used 
+in this exercise is CreateGraphAndEdgesExercise2() that illustrates the map with vertices and edges, BellmanFordNoWeight(), 
+RelaxNoWeight and PrintExercise2Path(). I use a modified variant of the Bellman-Ford algorithm where I, in the Relax
+function set the Weight to always be 1.
+
+I tested this implementation by comparing the distance to get between the edges and the distance on the node that was
+the "goal" node. I also printed out the path as described in the exercise.
+
+To test this implementation with some other data you can either manipulate the numbers in the function
+CreateGraphAndEdgesExercise2() to change the look of the graph and/or change the target and source node in the function
+PrintExercise2Path(). Another way to test this implementation is by creating an entirely new graph and add edges to it and
+check if the algorithm gets an exptected result.
+
+
+
+Niklas Olsson
+19950405
